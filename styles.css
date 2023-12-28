@@ -1,0 +1,80 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('https://fonts.google.com/specimen/Work+Sans');
+}
+
+.split-background {
+    height: 100vh;
+    position: relative;
+}
+
+.split-background::before {
+    content: "";
+    display: block;
+    height: 33.33%;
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.split-background::after {
+    content: "";
+    display: block;
+    height: 66.67%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h6 {
+    font-weight: 600;
+}
+
+h1, h6{
+    color: hsl(292, 42%, 14%);
+}
+
+p{
+    color: hsl(292, 16%, 49%);
+}
+
+.svg-button {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    background: url('./assets/images/icon-plus.svg') no-repeat center center;
+    background-size: cover;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px; /* Space between the button and h2 */
+  }
+  
+  
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
